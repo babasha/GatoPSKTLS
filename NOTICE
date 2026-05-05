@@ -1,0 +1,17 @@
+GatoPSKTLS
+Copyright 2026 Egor Babushkin
+
+This product includes software developed at
+the Drogue IoT project (https://drogue.io/).
+
+Original project: embedded-tls
+  https://github.com/drogue-iot/embedded-tls
+  Copyright 2020-2025 The Drogue IoT contributors
+  Licensed under the Apache License, Version 2.0
+
+GatoPSKTLS is a fork that adds TLS 1.3 PSK_KE server-mode (handshake driver,
+ClientHello parser, ServerHello/EncryptedExtensions emit, server-side key
+schedule helpers, and a `TlsServerSession` adapter) on top of the upstream
+client-only library. The original client implementation, key schedule
+primitives, AEAD wrappers, and HKDF/HMAC code are preserved; modifications
+are documented in CHANGELOG.md.
